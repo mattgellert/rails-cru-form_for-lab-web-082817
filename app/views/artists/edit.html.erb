@@ -1,0 +1,12 @@
+<h1>Edit Artist</h1>
+<%= form_for @artist do |f| %>
+
+<%= label_tag :'artist[name]'%><br>
+<%= text_field_tag :'artist[name]'%><br>
+
+<%= label_tag :'artist[bio]'%><br>
+<%= text_field_tag :'artist[bio]'%><br>
+
+<%= f.submit "Update Artist"%>
+
+<% end %>
